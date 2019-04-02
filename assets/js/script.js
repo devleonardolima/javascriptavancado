@@ -22,6 +22,19 @@ function carro(){
 
     this.inserirAno = function(ano){
         this.ano = ano;
+        if(this.ano > 2000){
+            this.carroNovo();
+        }else{
+            this.carrroVelho();
+        }
+    }
+
+    this.carroNovo = function(){
+        console.log("Seu carro esta mais para novo");
+    }
+
+    this.carrroVelho = function(){
+        console.log("Seu carro esta mais para velho");
     }
 
     this.inserirCor = function(cor){
