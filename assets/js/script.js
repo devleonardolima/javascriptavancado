@@ -1,3 +1,8 @@
+if(localStorage.nome == null){
+    localStorage.nome = prompt("Qual seu nome");
+}
+document.getElementById("info").innerHTML = localStorage.nome;
+
 function pararTeste(){
     clearInterval(timer);
     clearInterval(timer2);
@@ -29,10 +34,12 @@ function carro(){
         }
     }
 
+    // função auxiliar
     this.carroNovo = function(){
         console.log("Seu carro esta mais para novo");
     }
 
+    // função auxilizar
     this.carrroVelho = function(){
         console.log("Seu carro esta mais para velho");
     }
